@@ -18,7 +18,7 @@ This plugin can remove the links, scripts, styles and some other meta from the w
 
 All the above headers can be removed from this plugin. You can select them from the settings page. 
 
-= Make sure to check the settings Page =
+*Make sure to check the settings Page*
 
 ## Installation 
 
@@ -32,6 +32,6 @@ All the above headers can be removed from this plugin. You can select them from 
 
 A. Installing this plugin is the easiest way to remove unwanted links, scripts, styles and some other meta from the header.
 
-** Q. May i select the removing items?**
+**Q. May i select the removing items?**
 
 A. Yes, You can select the items you want to remove.

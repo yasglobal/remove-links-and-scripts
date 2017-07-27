@@ -1,10 +1,10 @@
 ﻿=== Remove Links and Scripts ===
-Contributors: aliya-yasir, sasiddiqui
+Contributors: aliya-yasir, sasiddiqui, yasglobal
 Donate link: https://www.paypal.me/yasglobal
 Tags: shortlink, rsd_link, wlwmanifest_link, feed_links, emoji_scripts, wp_embed, wp_json, emoji_styles, generator, rel_link
 Requires at least: 3.5
 Tested up to: 4.8
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -36,10 +36,9 @@ All the above headers can be removed from this plugin. You can select them from 
 2. Activate the Remove Links and Scripts plugin through the `Plugins` menu in WordPress.
 3. Configure the plugin by going to the menu `Remove Links and Scripts` that appears in your admin menu
 
-
 == Screenshots ==
 
-* YOu can select the options from the settings page ([here](http://www.example.com/wp-admin/admin.php?page=remove-links-scripts-settings)). 
+* You can select the options from the settings page ([here](http://www.example.com/wp-admin/admin.php?page=remove-links-scripts-settings)). 
 
 == Frequently Asked Questions ==
 
@@ -51,6 +50,10 @@ A. Yes, You can select the items you want to remove.
 
 == Changelog ==
 
+= 0.2 =
+
+  * Improve the Performance of the Plugin
+
 = 0.1 =
 
-* First release on wordpress.org.
+  * First release on wordpress.org.

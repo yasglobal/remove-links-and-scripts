@@ -30,11 +30,37 @@ All the above headers can be removed from this plugin. You can select them from 
 
 = Make sure to check the settings Page =
 
+=== Thanks for the Support ===
+
+The support from the users that love Remove Links and Scripts is huge. You can support Remove Links and Scripts future development and help to make it even better by donating or even giving a 5 star rating with a nice message to me :)
+
+[Donate to Remove Links and Scripts](https://www.paypal.me/yasglobal)
+
+=== Bug reports ===
+
+Bug reports for Remove Links and Scripts are [welcomed on GitHub](https://github.com/yasglobal/remove-links-and-scripts). Please note GitHub is not a support forum, and issues that aren't properly qualified as bugs will be closed.
+
 == Installation ==
 
-1. Upload the `remove-links-and-scripts` folder to the `/wp-content/plugins/` directory or Directly install the plugin through the WordPress plugins screen.
-2. Activate the Remove Links and Scripts plugin through the `Plugins` menu in WordPress.
-3. Configure the plugin by going to the menu `Remove Links and Scripts` that appears in your admin menu
+This process defines you the steps to follow either you are installing through WordPress or Manually from FTP.
+
+**From within WordPress**
+
+1. Visit 'Plugins > Add New'
+2. Search for Remove Links and Scripts
+3. Activate Remove Links and Scripts from your Plugins page.
+4. Go to "after activation" below.
+
+**Manually**
+
+1. Upload the `remove-links-and-scripts` folder to the `/wp-content/plugins/` directory
+2. Activate Remove Links and Scripts through the 'Plugins' menu in WordPress
+3. Go to "after activation" below.
+
+**After activation**
+
+1. Go to the plugin settings page and set up the plugin for your site.
+2. You're done!
 
 == Screenshots ==
 
@@ -49,6 +75,10 @@ A. Installing this plugin is the easiest way to remove unwanted links, scripts, 
 A. Yes, You can select the items you want to remove.
 
 == Changelog ==
+
+= 0.2.3 =
+
+  * Updated translation code and fixed PHP Notices
 
 = 0.2.2 =
 

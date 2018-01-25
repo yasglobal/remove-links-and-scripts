@@ -1,10 +1,9 @@
 <?php
-
 /**
  * Plugin Name: Remove Links and Scripts
  * Plugin URI: https://wordpress.org/plugins/remove-links-and-scripts/
  * Description: Remove unwanted links and scripts from wordpress header.
- * Version: 0.2.2
+ * Version: 0.2.3
  * Author: YAS Global Team
  * Author URI: https://www.yasglobal.com/web-design-development/wordpress/remove-links-scripts/
  * Donate link: https://www.paypal.me/yasglobal

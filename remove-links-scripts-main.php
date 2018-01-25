@@ -15,7 +15,7 @@ if ( ! function_exists( 'add_action' ) || ! function_exists( 'add_filter' ) ) {
 	exit();
 }
 
-define( 'REMOVE_LINKS_SCRIPTS_PLUGIN_VERSION', '0.2.2' );
+define( 'REMOVE_LINKS_SCRIPTS_PLUGIN_VERSION', '0.2.3' );
 
 if ( ! defined( 'REMOVE_LINKS_SCRIPTS_PATH' ) ) {
 	define( 'REMOVE_LINKS_SCRIPTS_PATH',
@@ -55,9 +55,9 @@ function remove_links_scripts_plugin_uninstall() {
 /**
  * Add textdomain hook for translation.
  */
-function remove_links_scripts_load_plugin_textdomain() {
+function remove_links_scripts_translation_capability() {
 	load_plugin_textdomain( 'remove-links-scripts', FALSE,
-		REMOVE_LINKS_SCRIPTS_BASENAME . '/languages/'
+		basename( dirname( REMOVE_LINKS_SCRIPTS_FILE ) ) . '/languages/'
 	);
 }
-add_action( 'plugins_loaded', 'remove_links_scripts_load_plugin_textdomain' );
+add_action( 'plugins_loaded', 'remove_links_scripts_translation_capability' );

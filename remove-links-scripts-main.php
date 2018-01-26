@@ -15,7 +15,7 @@ if ( ! function_exists( 'add_action' ) || ! function_exists( 'add_filter' ) ) {
 	exit();
 }
 
-define( 'REMOVE_LINKS_SCRIPTS_PLUGIN_VERSION', '0.2.3' );
+define( 'REMOVE_LINKS_SCRIPTS_PLUGIN_VERSION', '0.2.4' );
 
 if ( ! defined( 'REMOVE_LINKS_SCRIPTS_PATH' ) ) {
 	define( 'REMOVE_LINKS_SCRIPTS_PATH',

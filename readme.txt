@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/yasglobal
 Tags: shortlink, rsd_link, wlwmanifest_link, feed_links, emoji_scripts, wp_embed, wp_json, emoji_styles, generator, rel_link, disable-embeds
 Requires at least: 3.5
 Tested up to: 4.9
-Stable tag: 0.2.2
+Stable tag: 0.2.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -75,6 +75,10 @@ A. Installing this plugin is the easiest way to remove unwanted links, scripts, 
 A. Yes, You can select the items you want to remove.
 
 == Changelog ==
+
+= 0.2.4 =
+
+  * Update text domain for the translation
 
 = 0.2.3 =
 

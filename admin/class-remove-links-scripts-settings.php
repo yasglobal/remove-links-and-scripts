@@ -119,65 +119,65 @@ class Remove_Links_Scripts_Settings {
 		);
 		?>
 		<div class="wrap">
-			<h1><?php _e( 'Remove Links and Scripts Settings', 'remove-links-scripts' ); ?></h1>
-			<div><?php _e( 'Change settings to remove unwanted links and scripts from the wordpress.', 'remove-links-scripts' ); ?></div>
-			<form enctype="multipart/form-data" action="" method="POST" id="remove-links-scripts">
+			<h1><?php _e( 'Remove Links and Scripts Settings', 'remove-links-and-scripts' ); ?></h1>
+			<div><?php _e( 'Change settings to remove unwanted links and scripts from the wordpress.', 'remove-links-and-scripts' ); ?></div>
+			<form enctype="multipart/form-data" action="" method="POST" id="remove-links-and-scripts">
    
-				<table class="remove-links-scripts">
+				<table class="remove-links-and-scripts">
 					<caption>Remove Links</caption>
 					<tbody>
 						<tr>
-							<td><input type="checkbox" name="shortlink" value="on" <?php echo $remove_settings_shortlink_checked; ?> /><strong><?php _e( 'Remove Shortlink', 'remove-links-scripts' ); ?></strong></td>
+							<td><input type="checkbox" name="shortlink" value="on" <?php echo $remove_settings_shortlink_checked; ?> /><strong><?php _e( 'Remove Shortlink', 'remove-links-and-scripts' ); ?></strong></td>
 						</tr>
 						<tr>
-							<td><input type="checkbox" name="rsd_link" value="on" <?php echo $remove_settings_rsd_link_checked; ?> /><strong><?php _e( 'Remove RSD Links', 'remove-links-scripts' ); ?></strong></td>
+							<td><input type="checkbox" name="rsd_link" value="on" <?php echo $remove_settings_rsd_link_checked; ?> /><strong><?php _e( 'Remove RSD Links', 'remove-links-and-scripts' ); ?></strong></td>
 						</tr>
 						<tr>
-							<td><input type="checkbox" name="wlwmanifest_link" value="on" <?php echo $remove_settings_wlwmanifest_link_checked; ?> /><strong><?php _e( 'Remove WLW Manifest Links', 'remove-links-scripts' ); ?></strong></td>
+							<td><input type="checkbox" name="wlwmanifest_link" value="on" <?php echo $remove_settings_wlwmanifest_link_checked; ?> /><strong><?php _e( 'Remove WLW Manifest Links', 'remove-links-and-scripts' ); ?></strong></td>
 						</tr>
 						<tr>
-							<td><input type="checkbox" name="feed_links" value="on" <?php echo $remove_settings_feed_links_checked; ?> /><strong><?php _e( 'Remove RSS Links', 'remove-links-scripts' ); ?></strong></td>
+							<td><input type="checkbox" name="feed_links" value="on" <?php echo $remove_settings_feed_links_checked; ?> /><strong><?php _e( 'Remove RSS Links', 'remove-links-and-scripts' ); ?></strong></td>
 						</tr>
 					</tbody>
 				</table>
 
-				<table class="remove-links-scripts">
+				<table class="remove-links-and-scripts">
 					<caption>Remove Scripts</caption>
 					<tbody>
 						<tr>
-							<td><input type="checkbox" name="emoji_scripts" value="on" <?php echo $remove_settings_emoji_scripts_checked; ?> /><strong><?php _e( 'Remove Emoji Scripts', 'remove-links-scripts' ); ?></strong></td>
+							<td><input type="checkbox" name="emoji_scripts" value="on" <?php echo $remove_settings_emoji_scripts_checked; ?> /><strong><?php _e( 'Remove Emoji Scripts', 'remove-links-and-scripts' ); ?></strong></td>
 						</tr>
 						<tr>
-							<td><input type="checkbox" name="wp_embed" value="on" <?php echo $remove_settings_wp_embed_checked; ?> /><strong><?php _e( 'Remove Oembed(json + xml)', 'remove-links-scripts' ); ?></strong></td>
+							<td><input type="checkbox" name="wp_embed" value="on" <?php echo $remove_settings_wp_embed_checked; ?> /><strong><?php _e( 'Remove Oembed(json + xml)', 'remove-links-and-scripts' ); ?></strong></td>
 						</tr>
 						<tr>
-							<td><input type="checkbox" name="wp_json" value="on" <?php echo $remove_settings_wp_json_checked; ?> /><strong><?php _e( 'Remove wp_json', 'remove-links-scripts' ); ?></strong></td>
+							<td><input type="checkbox" name="wp_json" value="on" <?php echo $remove_settings_wp_json_checked; ?> /><strong><?php _e( 'Remove wp_json', 'remove-links-and-scripts' ); ?></strong></td>
 						</tr>
 					</tbody>
 				</table>
 
-				<table class="remove-links-scripts">
+				<table class="remove-links-and-scripts">
 					<caption>Remove Styles</caption>
 					<tbody>
 						<tr>
-							<td><input type="checkbox" name="emoji_styles" value="on" <?php echo $remove_settings_emoji_styles_checked; ?> /><strong><?php _e( 'Remove Emoji Styles', 'remove-links-scripts' ); ?></strong></td>
+							<td><input type="checkbox" name="emoji_styles" value="on" <?php echo $remove_settings_emoji_styles_checked; ?> /><strong><?php _e( 'Remove Emoji Styles', 'remove-links-and-scripts' ); ?></strong></td>
 						</tr>
 					</tbody>
 				</table>
 
-				<table class="remove-links-scripts">
+				<table class="remove-links-and-scripts">
 					<caption>Remove Meta</caption>
 					<tbody>
 						<tr>
-							<td><input type="checkbox" name="generator" value="on" <?php echo $remove_settings_generator_checked; ?> /><strong><?php _e( 'Remove WordPress Generator Meta', 'remove-links-scripts' ); ?></strong></td>
+							<td><input type="checkbox" name="generator" value="on" <?php echo $remove_settings_generator_checked; ?> /><strong><?php _e( 'Remove WordPress Generator Meta', 'remove-links-and-scripts' ); ?></strong></td>
 						</tr>
 						<tr>
-							<td><input type="checkbox" name="rel_link" value="on" <?php echo $remove_settings_rel_link_checked; ?> /><strong><?php _e( 'Remove Ajacent Relational Links (Next + Prev)', 'remove-links-scripts' ); ?></strong></td>
+							<td><input type="checkbox" name="rel_link" value="on" <?php echo $remove_settings_rel_link_checked; ?> /><strong><?php _e( 'Remove Ajacent Relational Links (Next + Prev)', 'remove-links-and-scripts' ); ?></strong></td>
 						</tr>
 					</tbody>
 				</table>
 
-				<p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="<?php _e( 'Save Changes', 'remove-links-scripts' ); ?>" /></p>
+				<p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="<?php _e( 'Save Changes', 'remove-links-and-scripts' ); ?>" /></p>
 			</form>
 		</div>
 		<?php

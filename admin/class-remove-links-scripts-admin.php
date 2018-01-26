@@ -66,7 +66,7 @@ class Remove_Links_Scripts_Admin {
 	 */
 	public function admin_footer_text() {
 		$footer_text = sprintf(
-			__( 'Remove Links and Scripts version %s by <a href="%s" title="YAS Global Website" target="_blank">YAS Global</a> - <a href="%s" title="Support forums" target="_blank">Support forums</a> - Follow on Twitter: <a href="%s" title="Follow YAS Global on Twitter" target="_blank">YAS Global</a>', 'custom-permalinks' ),
+			__( 'Remove Links and Scripts version %s by <a href="%s" title="YAS Global Website" target="_blank">YAS Global</a> - <a href="%s" title="Support forums" target="_blank">Support forums</a> - Follow on Twitter: <a href="%s" title="Follow YAS Global on Twitter" target="_blank">YAS Global</a>', 'remove-links-and-scripts' ),
 			REMOVE_LINKS_SCRIPTS_PLUGIN_VERSION, 'https://www.yasglobal.com',
 			'https://wordpress.org/support/plugin/remove-links-and-scripts',
 			'https://twitter.com/samisiddiqui91'
@@ -80,15 +80,15 @@ class Remove_Links_Scripts_Admin {
 	 */
 	public function settings_link( $links ) {
 		$about = sprintf(
-			__( '<a href="%s" title="About">About</a>', 'remove-links-scripts' ),
+			__( '<a href="%s" title="About">About</a>', 'remove-links-and-scripts' ),
 			'admin.php?page=remove-links-scripts-about-plugins'
 		);
 		$contact = sprintf(
-			__( '<a href="%s" title="Contact" target="_blank">Contact</a>', 'remove-links-scripts' ),
+			__( '<a href="%s" title="Contact" target="_blank">Contact</a>', 'remove-links-and-scripts' ),
 			'https://www.yasglobal.com/#request-form'
 		);
 		$settings_link = sprintf(
-			__( '<a href="%s" title="Settings">Settings</a>', 'remove-links-scripts' ),
+			__( '<a href="%s" title="Settings">Settings</a>', 'remove-links-and-scripts' ),
 			'admin.php?page=remove-links-scripts-settings'
 		);
 		array_unshift( $links, $settings_link );

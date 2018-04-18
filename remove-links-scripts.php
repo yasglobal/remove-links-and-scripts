@@ -35,18 +35,84 @@
 
 // Make sure we don't expose any info if called directly
 if ( ! defined( 'ABSPATH' ) ) {
-	echo 'Hi there!  I\'m just a plugin, not much I can do when called directly.';
-	exit;
+  echo 'Hi there!  I\'m just a plugin, not much I can do when called directly.';
+  exit;
 }
 
-if ( ! function_exists( 'add_action' ) || ! function_exists( 'add_filter' ) ) {
-	header( 'Status: 403 Forbidden' );
-	header( 'HTTP/1.1 403 Forbidden' );
-	exit();
+class Remove_Links_Scripts {
+
+  /**
+   * Class constructor.
+   */
+  public function __construct() {
+    $this->setup_constants();
+    $this->includes();
+
+    add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+  }
+
+  /**
+   * Setup plugin constants
+   *
+   * @access private
+   * @since 0.3
+   * @return void
+   */
+  private function setup_constants() {
+    if ( ! defined( 'REMOVE_LINKS_SCRIPTS_FILE' ) ) {
+      define( 'REMOVE_LINKS_SCRIPTS_FILE', __FILE__ );
+    }
+
+    if ( ! defined( 'REMOVE_LINKS_SCRIPTS_PLUGIN_VERSION' ) ) {
+      define( 'REMOVE_LINKS_SCRIPTS_PLUGIN_VERSION', '0.2.4' );
+    }
+
+    if ( ! defined( 'REMOVE_LINKS_SCRIPTS_PATH' ) ) {
+      define( 'REMOVE_LINKS_SCRIPTS_PATH', plugin_dir_path( REMOVE_LINKS_SCRIPTS_FILE ) );
+    }
+
+    if ( ! defined( 'REMOVE_LINKS_SCRIPTS_BASENAME' ) ) {
+      define( 'REMOVE_LINKS_SCRIPTS_BASENAME', plugin_basename( REMOVE_LINKS_SCRIPTS_FILE ) );
+    }
+  }
+
+  /**
+   * Include required files
+   *
+   * @access private
+   * @since 0.3
+   * @return void
+   */
+  private function includes() {
+    require_once(
+      REMOVE_LINKS_SCRIPTS_PATH . 'frontend/class-remove-links-scripts-frontend.php'
+    );
+    new Remove_Links_Scripts_Frontend();
+
+    if ( is_admin() ) {
+      require_once(
+        REMOVE_LINKS_SCRIPTS_PATH . 'admin/class-remove-links-scripts-admin.php'
+      );
+      new Remove_Links_Scripts_Admin();
+
+      register_uninstall_hook(
+        REMOVE_LINKS_SCRIPTS_FILE, 'remove_links_scripts_plugin_uninstall'
+      );
+    }
+  }
+
+  /**
+   * Loads the plugin language files
+   *
+   * @access public
+   * @since 0.3
+   * @return void
+   */
+  public function load_textdomain() {
+    load_plugin_textdomain( 'remove-links-scripts', FALSE,
+      basename( dirname( REMOVE_LINKS_SCRIPTS_FILE ) ) . '/languages/'
+    );
+  }
 }
 
-if ( ! defined( 'REMOVE_LINKS_SCRIPTS_FILE' ) ) {
-	define( 'REMOVE_LINKS_SCRIPTS_FILE', __FILE__ );
-}
-
-require_once( dirname( REMOVE_LINKS_SCRIPTS_FILE ) . '/remove-links-scripts-main.php' );
+new Remove_Links_Scripts();
